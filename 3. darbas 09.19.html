@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+const myButton = document.createElement("button");
+myButton.innerHTML = "Spausk"
+        myButton.setAttribute("class", "newButton");
+        document.body.appendChild(myButton);
+        myButton.style.width = "60px"
+        myButton.style.height = "20px"
+        let mySetting = 1
+
+
+        const createSquare = () => {
+            if (mySetting === 1){
+        const newDiv = document.createElement("div");
+        document.body.appendChild(newDiv);
+        newDiv.style.width = "20px"
+        newDiv.style.height = "20px"
+        newDiv.style.backgroundColor = "blue"
+        }}
+
+        const createSquare2 = () => {
+           switch (mySetting){
+            case 1:
+            newDiv.style.backgroundColor = "blue";
+            break;
+            case 2:
+            newDiv.style.backgroundColor = "yellow";
+            break;
+            default:
+            newDiv.style.backgroundColor = "green"
+
+           }}
+        
+
+
+
+     
+
+
+
+    
+        myButton.addEventListener("click", createSquare);
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+<!-- 3. Pasiruošimas sukurti puslapį kuriame kiekvieną kart paspaudus mygtuką atsirastu kvadratas. 
+Pirmą kart paspaudus kvadrato aukštis  20px ir 20px plotis. 
+Kiekvieną kart spaudžiant mygtuką atsirandat naujam kvadratui auštis ir plotis 20px padidėja. -->
